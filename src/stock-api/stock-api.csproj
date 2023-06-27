@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>stock_api</RootNamespace>
+    <UserSecretsId>5b8d86a8-e3c2-4f11-8a5d-1a07a51a4754</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

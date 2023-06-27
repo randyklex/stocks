@@ -1,4 +1,6 @@
 
+using Stocks.Data;
+
 namespace stock_api;
 
 public class Program
@@ -10,6 +12,10 @@ public class Program
         // Add services to the container.
 
         builder.Services.AddControllers();
+
+        builder.Services.AddTransient<StockDbContext, StockDbContext>();
+        builder.Services.AddTransient<JournalRepository, JournalRepository>();
+
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
